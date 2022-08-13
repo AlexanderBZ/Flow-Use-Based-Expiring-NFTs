@@ -129,8 +129,8 @@ pub contract UseBasedExpiringNFT: NonFungibleToken {
   init() {
     self.totalSupply = 0
 
-    self.CollectionStoragePath = /storage/UseBasedExpiringNFTCollection
-    self.CollectionPublicPath = /public/UseBasedExpiringNFTCollection
+    self.CollectionStoragePath = /storage/CryptoRaptorsCollection
+    self.CollectionPublicPath = /public/CryptoRaptorsCollection
 
     let collection <- create Collection()
     self.account.save(<-collection, to: self.CollectionStoragePath)
